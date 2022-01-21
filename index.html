@@ -13,48 +13,36 @@
 
     <main>
         <!-- <p>WPMの求め方 <br> [文字数 ÷ 秒数× 60]</p> -->
-        <div section01>
+        <section class="section01">
             <div class="calucurate-area" >
-                <div class="calucurate-textboxA box01">
-                    <!-- <label class="textH2" for="textbox01">文字数</label> -->
-                    <input type="number" class="textbox" id="textbox01" min="0" placeholder="文字数">
-                </div>
-                <div class="calucurate-textboxA box02">
-                    <!-- <label class="textH2" for="textbox02">秒数</label> -->
-                    <input type="text" class="textbox" id="textbox02" placeholder="秒数">
-                </div>
-                <!-- <div class="calucurate-textboxA box03">
-                    <button type="button" class="button_main" id="btn01">計算</button>
-                </div> -->
-                <div class="calucurate-textboxA box04">
-                    <!-- <label class="textH2" for="textbox03">WPM</label> -->
-                    <input type="text" value="" class="textbox" id="textbox03" readonly="" placeholder="WPM">
-                </div>
-                <div class="calucurate-textboxA box05">
-                    <button type="button" class="button_main" id="btn02">クリア</button>
-                </div>
+                <div class="calucurate-textboxA box01"><input  type="number" class="textbox"     id="textbox01"  placeholder="文字数" min="0" value=""></div>
+                <div class="calucurate-textboxA box02"><input  type="text"   class="textbox"     id="textbox02"  placeholder="秒数" value=""></div>
+                <div class="calucurate-textboxA box03"><input  type="text"   class="textbox"     id="textbox03"  placeholder="WPM" readonly="" value=""></div>
+                <div class="calucurate-textboxA box04"><button type="button" class="button_main" id="btn01">クリア</button></div>
+                <div class="calucurate-textboxA box05"><button type="button" class="button_main" id="btn02">履歴に残す</button></div>
 
             </div>
-        </div>
-        <div class="section02">
-            <!-- 履歴 -->
-            <!-- <p>履歴</p>a -->
+        </section>
+        <section class="section02">
+            <h2>履歴</h2>
+            <ul>
+                <li></li>
+            </ul>
 
-        </div>
-        <div class="section03">
+        </section>
+        <section class="section03">
             <h2>使いかた</h2>
             <br>
-            <div>テキストボックスに文字数と読むのにかかった時間を入力すると、計算されたWPMが表示されます。
-            <br><br> コロンと空白に対応しています。<br>例えば150秒と入力したい場合、 <span style="background-color: #b8eafd; ">2:30</span> または  <span style="background-color: #b8eafd">2 30</span> と入力してもちゃんと認識されます。
-            <br><br>改良中
-        </h7>
-        </div>
-            <!-- <ul class="textboxB">
-                <li>3秒経ったら履歴に追加される機能</li>
-                <li>3:56を秒数に変換してくれる機能✅</li>
-                <li>3 56を秒数に変換してくれる機能✅</li>
-                <li>コロン":"か空白" "かを切り替える機能</li>
-            </ul> -->
+            <div>
+                文字数と時間を入力するとWPMが表示されます。
+                <br><br>
+                コロンと空白に対応しています。<br>
+                例えば150秒と入力したい場合、<br>
+                2:30 または 2 30 と入力してもちゃんと認識されます。
+                <br><br>
+                WPMの求め方 <br> [文字数 ÷ 秒数× 60]
+                <!-- <br><br>改良中 -->
+            </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/script.js"></script>

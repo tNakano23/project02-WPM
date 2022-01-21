@@ -84,7 +84,7 @@ function calucurate(NUM) {
 
 // ----
 
-btn02.onclick     = function () {
+btn01.onclick     = function () {
     textbox03.value = "";
 }
 
@@ -107,3 +107,28 @@ function run() {
     return result
 }
 
+$(function(){
+    $('#btn02').on('click', function(){
+        let tb01 = textbox01.value;
+        let tb02 = textbox02.value;
+        let tb03 = textbox03.value;
+
+        let now  = new Date();
+        let hour = now.getHours();
+        let min  = now.getMinutes();
+        let sec  = now.getSeconds();
+
+        // console.log(textbox01.value);
+        // console.log(textbox02.value);
+        // console.log(textbox03.value);
+        // console.log(min);
+        // console.log(sec);
+        // console.log(hour+":"+min+":"+sec);
+
+        let rireki = "文字数："+tb01+"｜秒数："+tb02+"｜WPM："+tb03;
+        let ontime = "時刻("+hour+":"+min+":"+sec+")"
+        // console.log(rireki);
+        // let clone = $('li');
+        $('li').append('<br>'+ontime+'<br>'+rireki+'<br>');
+    });
+});

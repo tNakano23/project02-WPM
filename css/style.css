@@ -1,16 +1,19 @@
 *{
-  font-size: 62.5%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 header{
-  width: 100%;
-  height: 30px;
-  margin: 5px;
-  /* background-color: rgb(231, 90, 47); */
+  padding: 15px 5px 10px 5px;
+  border-bottom: solid 1px black;
+
 }
 main{
-  /* background-color: rgb(238, 207, 198); */
   height: 100vh;
   width: 100vw;
+}
+section{
+  border-bottom: solid 1px black;
 }
 .calucurate-area{
   display: flex;
@@ -18,16 +21,11 @@ main{
   justify-content: center;
   align-items: center;
   padding: 15px 0;
-  /* margin : 10px 0; */
-
-  border-top   : solid 1px black;
-  border-bottom: solid 1px black;
 }
 .textH2{
   font-size: 1em;
   font-weight: 700;
   font: 15px/24px sans-serif;
-
 }
 .textbox{
   padding-left: 1rem;
@@ -86,20 +84,25 @@ main{
   justify-content: center;
   align-items: center;
 }
-#btn01{
-  border: 3px dashed #3d9ec8;
-}
-.box04{
+.box03{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#btn02{
+#btn01{
+  margin: 10px 0;
   padding: 0.1em 1em;
-  border: 3px dashed #E24E62;
+  border: 3px solid #E24E62;
 }
-
-.textboxB{
-  margin-top: 30px;
+#btn02{
+  margin: 10px 0;
+  padding: 0.1em 1em;
+  border: 3px dashed #3d9ec8;
+}
+.section02{
+  padding: 30px;
+}
+.section03{
+  padding: 30px;
 }
